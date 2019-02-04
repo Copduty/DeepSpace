@@ -30,7 +30,7 @@ public class ArmSubsystem extends PIDSubsystem {
   // Limit Switch
   LimitSwitch ArmBound = new LimitSwitch(RobotMap.Switch);
 
-  // This double records the angle the arm is currently at
+  // Angle Arm Is At
   double angle;
 
   public ArmSubsystem() {
@@ -72,13 +72,13 @@ public class ArmSubsystem extends PIDSubsystem {
     ForeArm.set(ControlMode.PercentOutput, power);
   }
 
-  // This method moces the arm base to a certain degree position (from 0 - 180)
+  // This method moves the arm base to a certain degree position (from 0 - 180)
   public void moveArmBaseToDegree (double destDegree) {
     // How many degrees the arm base needs to move
     double mValue = destDegree - angle;
   }
 
-  // This method moces the fore arm to a certain degree position (from 0 - 180)
+  // This method moves the fore arm to a certain degree position (from 0 - 180)
   public void moveForeArmToDegree (double destDegree) {
     // How many degrees the fore arm needs to move
     double mValue = destDegree - angle;
