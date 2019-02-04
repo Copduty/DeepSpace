@@ -5,7 +5,7 @@ import edu.wpi.first.wpilibj.XboxController;
 import edu.wpi.first.wpilibj.GenericHID.Hand;
 
 /*
- * Operator Interface - Maps controller actions to the actions/capabilities of the robot
+ * Operator Interface - Mapping for controller
  */
 
 public class OI {
